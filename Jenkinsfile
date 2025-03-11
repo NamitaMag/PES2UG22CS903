@@ -11,7 +11,8 @@ pipeline {
         
         stage('Test') {
             steps {
-                sh './PES2UG22CS903-1'
+                // Intentional error: wrong binary name
+                sh './PES2UG22CS903-2'
                 echo 'Test Stage Successful'
             }
             post {
